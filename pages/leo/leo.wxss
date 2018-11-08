@@ -8,7 +8,7 @@
     margin: 0 auto;
     position: absolute;
     width: 500rpx;
-    top: 10%;
+    top: 6%;
     left: 50%;
     margin-left: -250rpx;
     /*border: 1px solid red;*/
@@ -28,7 +28,7 @@
 .detail {
     font-size: 34rpx;
     color: #888;
-    margin-bottom: 70rpx;
+    margin-bottom: 40rpx;
 }
 
 .payButton {
@@ -39,4 +39,10 @@
 .page_ad {
     margin: 0 auto 60rpx auto;
     width: 600rpx;
+}
+
+.baobao{
+    margin-top: 20rpx;
+    width: 80%;
+    /* height: 80%; */
 }

@@ -15,7 +15,7 @@
             <icon type="warn" size="80" color="#e64340"></icon>
         </view>
         <view class="detail-body-item">
-            <text>周公: 暂无与"{{searchKey}}"相关的解梦</text>
+            <text>慧儿: 暂无与"{{searchKey}}"相关的解梦</text>
         </view>
     </view>
     <view class="leo-btn">

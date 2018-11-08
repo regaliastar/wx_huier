@@ -10,7 +10,7 @@ Page({
         datas: datas.dreamsData,
         minWrapHeight: 900
     },
-    // 查询数据库
+    // 查询数据
     getData() {
         let arr = []
         const that = this

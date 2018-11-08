@@ -1,8 +1,19 @@
 <view class="leo-page">
     <view class="leo-bd">
-      
-    </view>
-    <view class="weui-footer weui-footer_fixed-bottom">
-   
+        <view class="logo">
+            <image src="../../images/logo-128.png"></image>
+        </view>
+        <view class="title">
+            <text>慧儿解梦 v1.2.0</text>
+        </view>
+        <view class="detail">
+            <text>By zhoulin</text>
+        </view>
+        <view class="detail">
+            <text>这个应用，献给经常做梦的慧儿~！</text>
+        </view>
+        <view>
+            <image class='baobao' src='../../images/baobao.jpg'></image>
+        </view>
     </view>
 </view>

@@ -8,8 +8,8 @@
     </view>
     <view class="weui-footer weui-footer_fixed-bottom">
         <view class="weui-footer__text leo-footer">
-            <navigator hover-class="navigator-hover">
-                mumu
+            <navigator url="../leo/leo" hover-class="navigator-hover">
+                zhoulin
             </navigator>
         </view>
     </view>
