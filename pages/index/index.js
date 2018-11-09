@@ -35,6 +35,7 @@ Page({
           wx.navigateTo({
             url: '../photo-edit/index/index'
           })
+          return
         }
 
         wx.navigateTo({
@@ -49,6 +50,113 @@ Page({
             searchKey: val
         })
     },
+  menuHide() {
+    if (this.data.hasPopped) {
+      this.takeback()
+      this.setData({
+        hasPopped: false,
+      })
+    }
+  },
+  menuMain() {
+    if (!this.data.hasPopped) {
+      this.popp()
+      this.setData({
+        hasPopped: true,
+      })
+    } else {
+      this.takeback()
+      this.setData({
+        hasPopped: false,
+      })
+    }
+  },
+  menuToPhotoEdit() {
+    this.menuMain()
+    wx.navigateTo({
+      url: '/pages/photo-edit/index/index',
+    })
+  },
+  menuToInfo() {
+    this.menuMain()
+    wx.navigateTo({
+      url: '/pages/leo/leo',
+    })
+  },
+  // menuToAbout() {
+  //   this.menuMain()
+  //   wx.navigateTo({
+  //     url: '/pages/about/about',
+  //   })
+  // },
+  popp() {
+    let animationMain = wx.createAnimation({
+      duration: 200,
+      timingFunction: 'ease-out'
+    })
+    let animationOne = wx.createAnimation({
+      duration: 200,
+      timingFunction: 'ease-out'
+    })
+    let animationTwo = wx.createAnimation({
+      duration: 200,
+      timingFunction: 'ease-out'
+    })
+    let animationThree = wx.createAnimation({
+      duration: 200,
+      timingFunction: 'ease-out'
+    })
+    let animationFour = wx.createAnimation({
+      duration: 200,
+      timingFunction: 'ease-out'
+    })
+    animationMain.rotateZ(180).step()
+    animationOne.translate(0, -60).rotateZ(360).opacity(1).step()
+    animationTwo.translate(-Math.sqrt(3600 - 400), -30).rotateZ(360).opacity(1).step()
+    animationThree.translate(-Math.sqrt(3600 - 400), 30).rotateZ(360).opacity(1).step()
+    animationFour.translate(0, 60).rotateZ(360).opacity(1).step()
+    this.setData({
+      animationMain: animationMain.export(),
+      animationOne: animationOne.export(),
+      animationTwo: animationTwo.export(),
+      animationThree: animationThree.export(),
+      animationFour: animationFour.export(),
+    })
+  },
+  takeback() {
+    let animationMain = wx.createAnimation({
+      duration: 200,
+      timingFunction: 'ease-out'
+    })
+    let animationOne = wx.createAnimation({
+      duration: 200,
+      timingFunction: 'ease-out'
+    })
+    let animationTwo = wx.createAnimation({
+      duration: 200,
+      timingFunction: 'ease-out'
+    })
+    let animationThree = wx.createAnimation({
+      duration: 200,
+      timingFunction: 'ease-out'
+    })
+    let animationFour = wx.createAnimation({
+      duration: 200,
+      timingFunction: 'ease-out'
+    })
+    animationMain.rotateZ(0).step();
+    animationOne.translate(0, 0).rotateZ(0).opacity(0).step()
+    animationTwo.translate(0, 0).rotateZ(0).opacity(0).step()
+    animationThree.translate(0, 0).rotateZ(0).opacity(0).step()
+    animationFour.translate(0, 0).rotateZ(0).opacity(0).step()
+    this.setData({
+      animationMain: animationMain.export(),
+      animationOne: animationOne.export(),
+      animationTwo: animationTwo.export(),
+      animationThree: animationThree.export(),
+      animationFour: animationFour.export(),
+    })
+  },
     // 定义转发
     onShareAppMessage: Util.shareConfig
 })

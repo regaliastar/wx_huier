@@ -6,11 +6,20 @@
             <image bindtap="searchTap" src="../../images/search-btn.png"></image>
         </view>
     </view>
-    <view class="weui-footer weui-footer_fixed-bottom">
+    <!-- <view class="weui-footer weui-footer_fixed-bottom">
         <view class="weui-footer__text leo-footer foot-id">
             <navigator url="../leo/leo" hover-class="navigator-hover">
                 关于
             </navigator>
         </view>
-    </view>
+    </view> -->
+    <!-- 悬浮菜单 -->
+  <view class='menus' wx:if='{{!bcgImgAreaShow}}'>
+    <image src="/images/share_circle.png" animation="{{animationOne}}" class="menu"></image>
+    <button plain='true' open-type='share' animation="{{animationOne}}" class='menu share'></button>
+    <image src="/images/photo-edit.png" animation="{{animationThree}}" class="menu" catchtap="menuToPhotoEdit"></image>
+    <image src="/images/info.png" animation="{{animationTwo}}" class="menu" catchtap="menuToInfo"></image>
+    <!-- <image src="/images/info.png" animation="{{animationFour}}" class="menu" catchtap="menuToAbout"></image> -->
+    <image src="/images/menu.png" animation="{{animationMain}}" class="menu main" catchtap="menuMain"></image>
+  </view>
 </view>
