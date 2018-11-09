@@ -31,6 +31,12 @@
     margin-bottom: 40rpx;
 }
 
+.ps {
+    font-size: 30rpx;
+    color: #888;
+    margin-bottom: 20rpx;
+}
+
 .payButton {
     line-height: 80rpx;
     margin-bottom: 10rpx;
@@ -45,4 +51,11 @@
     margin-top: 20rpx;
     width: 80%;
     /* height: 80%; */
+}
+
+.href{
+    font-size: 34rpx;
+    color: #000;
+    margin-bottom: 40rpx;
+    text-decoration:underline;
 }

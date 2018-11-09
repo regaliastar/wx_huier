@@ -37,3 +37,8 @@
     width: 38rpx;
     height: 38rpx;
 }
+
+.foot-id {
+  color: #000;
+  font-size: 35rpx;
+}

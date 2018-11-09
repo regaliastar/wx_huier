@@ -4,14 +4,19 @@
         "pages/detail/detail",
         "pages/groupList/groupList",
         "pages/titleList/titleList",
-        "pages/leo/leo"
+        "pages/leo/leo",
+        "pages/photo-edit/index/index",
+        "pages/photo-edit/logs/logs",
+        "pages/photo-edit/modifyPhoto/modify",
+        "pages/photo-edit/splicePhoto/splice",
+        "pages/photo-edit/emotionChoose/emotionChoose",
+        "pages/photo-edit/emotionEdit/emotionEdit",
+        "pages/photo-edit/spliceMenu/spliceMenu"
     ],
     "window": {
         "backgroundTextStyle": "light",
-        "navigationBarTextStyle": "white",
-        "navigationBarBackgroundColor": "#0E1327",
-        "backgroundColor": "#333449",
-        "navigationBarTitleText": "慧儿解梦",
-        "navigationBarTextStyle": "white"
+        "navigationBarTextStyle": "black",
+        "navigationBarBackgroundColor": "#f8af9c",
+        "navigationBarTitleText": "慧儿解梦"
     }
 }

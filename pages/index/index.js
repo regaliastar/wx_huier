@@ -31,6 +31,12 @@ Page({
 
         if (index2 != -1) key = key.substr(index2 + 2)
 
+        if(key == '我要修图'){
+          wx.navigateTo({
+            url: '../photo-edit/index/index'
+          })
+        }
+
         wx.navigateTo({
             url: '../detail/detail?key=' + key
         })

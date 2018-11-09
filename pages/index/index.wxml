@@ -7,9 +7,9 @@
         </view>
     </view>
     <view class="weui-footer weui-footer_fixed-bottom">
-        <view class="weui-footer__text leo-footer">
+        <view class="weui-footer__text leo-footer foot-id">
             <navigator url="../leo/leo" hover-class="navigator-hover">
-                zhoulin
+                关于
             </navigator>
         </view>
     </view>

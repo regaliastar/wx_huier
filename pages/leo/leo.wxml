@@ -4,14 +4,23 @@
             <image src="../../images/logo-128.png"></image>
         </view>
         <view class="title">
-            <text>慧儿解梦 v1.2.0</text>
+            <text>慧儿解梦 v1.3.0</text>
         </view>
         <view class="detail">
             <text>By zhoulin</text>
         </view>
         <view class="detail">
-            <text>这个应用，献给经常做梦的慧儿~！</text>
+            <text>献给经常做梦的慧儿~！</text>
         </view>
+        <view class="ps">
+            <text>下面是一些小功能~</text>
+        </view>
+        <view class="href">
+            <navigator url="../photo-edit/index/index" hover-class="navigator-hover">
+                我要修图
+            </navigator>
+        </view>
+        
         <view>
             <image class='baobao' src='../../images/baobao.jpg'></image>
         </view>
